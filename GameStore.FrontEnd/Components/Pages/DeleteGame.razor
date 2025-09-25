@@ -1,0 +1,46 @@
+﻿
+@inject GameClient Client
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<!-- Delete Game Modal -->
+<div class="modal fade" id="@GetModalId(game)" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">@title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" @onclick="@Confirm" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@code {
+    [Parameter]
+    public Games? game { get; set; }
+    private string title = string.Empty;
+    protected override void OnParametersSet()
+    {
+        if (game is not null)
+        {
+            title = $"Delete {game.Name}?";
+        }
+    }
+
+    public static string GetModalId(Games? game){
+        ArgumentNullException.ThrowIfNull(game);
+        return $"deleteModal-{game.Id}";
+
+    }
+
+    private void Confirm(){
+        
+        Client.DeleteGame(game!.Id);
+        Navigation.Refresh();
+    }
+}
