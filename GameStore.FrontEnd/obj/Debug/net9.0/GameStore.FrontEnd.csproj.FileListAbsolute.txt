@@ -31,3 +31,4 @@ C:\Users\meezo\dotnetProjects\GameStore\GameStore.FrontEnd\obj\Debug\net9.0\refi
 C:\Users\meezo\dotnetProjects\GameStore\GameStore.FrontEnd\obj\Debug\net9.0\GameStore.FrontEnd.pdb
 C:\Users\meezo\dotnetProjects\GameStore\GameStore.FrontEnd\obj\Debug\net9.0\GameStore.FrontEnd.genruntimeconfig.cache
 C:\Users\meezo\dotnetProjects\GameStore\GameStore.FrontEnd\obj\Debug\net9.0\ref\GameStore.FrontEnd.dll
+c:\Users\meezo\dotnetProjects\GameStore\GameStore.FrontEnd\obj\Debug\net9.0\GameStore.FrontEnd.sourcelink.json
