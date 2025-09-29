@@ -2,27 +2,27 @@ GET http://localhost:5070
 ###
 GET http://localhost:5070/games
 ###
-GET http://localhost:5070/games/4
+GET http://localhost:5070/games/3
 ###
 POST http://localhost:5070/games
 Content-Type: application/json
 
 {
-    "name": "Fifa 24",
-    "gener": "Sports",
-    "price": 59.99,
-    "releaseDate": "2024-09-27"
+    "name": "sss",
+    "generId": 4,
+    "price": 49.99,
+    "releaseDate": "2025-09-27"
 }
 
 ###
-PUT http://localhost:5070/games/4 
+PUT http://localhost:5070/games/3
 Content-Type: application/json
 
 {
-    "name": "FiFa 25",
-    "gener": "Sports",
-    "price": 49.99,
-    "releaseDate": "2025-09-27"
+    "name": "Street Fighter 6",
+    "generId": 2,
+    "price": 59.99,
+    "releaseDate": "2023-06-02"
 }
 
 ###
