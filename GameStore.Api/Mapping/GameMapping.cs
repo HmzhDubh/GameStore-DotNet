@@ -12,7 +12,7 @@ public static class GameMapping
         return new Game()
         {
             Name = game.Name,
-            GenreId = game.GenerId,
+            GenreId = game.GenreId,
             Price = game.Price,
             ReleaseDate = game.ReleaseDate
         };
@@ -48,7 +48,7 @@ public static class GameMapping
         {
             Id = id,
             Name = game.Name,
-            GenreId = game.GenerId,
+            GenreId = game.GenreId,
             Price = game.Price,
             ReleaseDate = game.ReleaseDate
         };
